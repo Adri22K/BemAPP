@@ -1,5 +1,5 @@
 # 📍 BEM AQUI - APP
-Esse repositorio será sobre o desenvolvimento do Itinerário Extensionista do 5° semestre de SI, segue mais detalhes abaixo:
+Esse repositorio será sobre o desenvolvimento do site para o Itinerário Extensionista do 5° semestre de SI, segue mais detalhes abaixo:
 
 # 💙 Tudo que importa, Bem Aqui!
 
