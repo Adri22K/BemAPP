@@ -38,7 +38,7 @@ Onde irá conter:
 
 - Adrielle Stollemberger RGM: 33948844
 - Victor Almeida RGM: 32901321
-- Nicolas Santos Silva RGM: 3287380
+- Nicolas Santos Silva RGM: 32855885
 - Samir Abdul Khalek RGM: 32657994
 - João Pedro Garcia Almeida RGM: 32847629
 - Eudenis de Souza Vieira RGM: 32751621
