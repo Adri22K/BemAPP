@@ -42,9 +42,5 @@ Onde irá conter:
 - Samir Abdul Khalek RGM: 32657994
 - João Pedro Garcia Almeida RGM: 32847629
 - Eudenis de Souza Vieira RGM: 32751621
-- Gabriel Januário Alves  RGM: 35609991
 - Diogo Gomes Barbosa RGM: 35866276
-- Felipe Almeida dos Reis RGM: 35950129
-- Jean Carlos Silva de Almeida RGM: 33783276
-- Samuel Allan Nunes da Cunha RGM: 34524746
 - João Guilherme Cravo dos Santos RGM: 35880759
