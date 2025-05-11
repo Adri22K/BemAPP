@@ -1,0 +1,59 @@
+:root {
+  --cor-fundo: #f0efee;
+  --cor-primaria: #8dc6ff;
+  --cor-secundaria: #04194d;
+  --cor-texto: #04194d;
+  --cor-destaque: #8dc6ff;
+}
+
+body {
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: var(--cor-primaria);
+}
+
+h1 span {
+  border-bottom: 2px solid var(--cor-primaria);
+  padding-bottom: 5px;
+}
+
+p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  max-width: 800px;
+}
+
+/* Collapsible Materialize Customizado */
+.collapsible {
+  background-color: var(--cor-secundaria);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.collapsible-header {
+  background-color: var(--cor-secundaria);
+  color: #f0efee;
+  font-weight: bold;
+  font-size: 18px;
+  border-bottom: 1px solid #01091d;
+}
+
+.collapsible-body {
+  background-color: #01091d;
+  color: #f0efee;
+  font-size: 16px;
+  padding: 20px;
+}
+
+/* Ícones */
+.material-icons {
+  color: var(--cor-hover);
+}
