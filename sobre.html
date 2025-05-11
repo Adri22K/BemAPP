@@ -1,121 +1,165 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sobre</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/stylesobre.css" />
+    <link rel="stylesheet" href="css/acessibilidade.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sobre</title>
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/stylesobre.css">
-  <link rel="stylesheet" href="css/acessibilidade.css">
+  <div class="texto-sobre">
+    <p>
+      O BEM APP é um projeto inovador voltado à promoção da saúde física, mental
+      e do bem-estar geral. Desenvolvido com o objetivo de oferecer suporte
+      acessível e personalizado, o aplicativo será uma ferramenta prática para
+      auxiliar os usuários a cuidarem melhor de si mesmos no dia a dia.
+    </p>
 
-</head>
+    <h1><span>O que você encontra no BEM APP</span></h1>
 
-<div class="texto-sobre">
-  <p>O BEM APP é um projeto inovador voltado à promoção da saúde física,
-    mental e do bem-estar geral. Desenvolvido com o objetivo de oferecer
-    suporte acessível e personalizado, o aplicativo será uma ferramenta
-    prática para auxiliar os usuários a cuidarem melhor de si mesmos no dia a dia.
-  </p>
+    <p>
+      O BEM APP reúne recursos integrados que permitem ao usuário acompanhar sua
+      saúde e qualidade de vida de forma simples e intuitiva. Entre as
+      funcionalidades previstas, destacam-se:
+    </p>
+  </div>
 
-  <h1><span>O que você encontra no BEM APP</span></h1>
-
-  <p>O BEM APP reúne recursos integrados que permitem ao usuário acompanhar sua saúde e
-    qualidade de vida de forma simples e intuitiva. Entre as funcionalidades previstas, destacam-se:</p>
-</div>
-
-<body>
-  <!-- Barra de Acessibilidade -->
-  <div id="acessibilidade-bar">
-    <button id="toggle-bar" title="Mostrar/Ocultar barra">☰</button>
-    <div id="acessibilidade-opcoes">
-      <button onclick="aumentarFonte()" title="Aumentar Fonte">A+</button>
-      <button onclick="diminuirFonte()" title="Diminuir Fonte">A-</button>
-      <button onclick="alternarContraste()" title="Alto Contraste">🌓</button>
-      <button onclick="alternarLeitura()" title="Modo Leitura">📖</button>
+  <body>
+    <!-- Barra de Acessibilidade -->
+    <div id="acessibilidade-bar">
+      <button id="toggle-bar" title="Mostrar/Ocultar barra">☰</button>
+      <div id="acessibilidade-opcoes">
+        <button onclick="aumentarFonte()" title="Aumentar Fonte">A+</button>
+        <button onclick="diminuirFonte()" title="Diminuir Fonte">A-</button>
+        <button onclick="alternarContraste()" title="Alto Contraste">🌓</button>
+        <button onclick="alternarLeitura()" title="Modo Leitura">📖</button>
+      </div>
     </div>
-  </div>
 
-  <!-- VLibras -->
-  <div vw class="enabled">
-    <div vw-access-button class="active"></div>
-    <div vw-plugin-wrapper>
-      <div class="vw-plugin-top-wrapper"></div>
+    <!-- VLibras -->
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
     </div>
-  </div>
 
-  <div class="container">
-    <ul class="collapsible popout">
-      <li class="active">
-        <div class="collapsible-header"><i class="material-icons">smartphone</i>Acesso à Informação</div>
-        <div class="collapsible-body">
-          <span>As pessoas podem encontrar rapidamente informações sobre vacinação, doações e serviços gratuitos.
-            Reduzindo o risco de desinformação e ajudando a população a tomar decisões mais informadas sobre sua
-            saúde.</span>
-        </div>
-      </li>
-      <li>
-        <div class="collapsible-header"><i class="material-icons">info</i>Combate à Desinformação</div>
-        <div class="collapsible-body">
-          <span>O chatbot e as notificações garantem que informações confiáveis sejam disseminadas, evitando que fake
-            news sobre saúde prejudiquem a população e incentivando boas práticas.</span>
-        </div>
-      </li>
-      <li>
-        <div class="collapsible-header"><i class="material-icons">near_me</i>Facilita o Acesso a Serviços Gratuitos
-        </div>
-        <div class="collapsible-body">
-          <span>O mapa interativo direciona as pessoas para locais próximos que oferecem serviços essenciais, ajudando
-            quem precisa de atendimento rápido sem depender de longas buscas ou informações desencontradas.</span>
-        </div>
-      </li>
-      <li>
-        <div class="collapsible-header"><i class="material-icons">family_restroom</i>Incentivo a Parcerias e Ações
-          Comunitárias</div>
-        <div class="collapsible-body">
-          <span>O espaço para ONGs, escolas e empresas ampliarem o alcance a projetos sociais, fortalecendo o trabalho
-            conjunto entre sociedade civil e organizações.</span>
-        </div>
-      </li>
-      <li>
-        <div class="collapsible-header"><i class="material-icons">warning</i>Canal para Denúncias e Melhorias Sociais
-        </div>
-        <div class="collapsible-body">
-          <span>O canal de denúncias permite que problemas estruturais e sociais sejam reportados rapidamente,
-            facilitando a resolução de questões como falta de saneamento ou negligência em políticas públicas.</span>
-        </div>
-      </li>
-      <li>
-        <div class="collapsible-header"><i class="material-icons">download_for_offline</i>Acessibilidade mesmo offline
-        </div>
-        <div class="collapsible-body">
-          <span>Informações podem ser salvas para consulta sem internet, beneficiando pessoas em áreas remotas ou com
-            pouca conectividade.</span>
-        </div>
-      </li>
-    </ul>
-  </div>
+    <div class="container">
+      <ul class="collapsible popout">
+        <li class="active">
+          <div class="collapsible-header">
+            <i class="material-icons">smartphone</i>Acesso à Informação
+          </div>
+          <div class="collapsible-body">
+            <span
+              >As pessoas podem encontrar rapidamente informações sobre
+              vacinação, doações e serviços gratuitos. Reduzindo o risco de
+              desinformação e ajudando a população a tomar decisões mais
+              informadas sobre sua saúde.</span
+            >
+          </div>
+        </li>
+        <li>
+          <div class="collapsible-header">
+            <i class="material-icons">info</i>Combate à Desinformação
+          </div>
+          <div class="collapsible-body">
+            <span
+              >O chatbot e as notificações garantem que informações confiáveis
+              sejam disseminadas, evitando que fake news sobre saúde prejudiquem
+              a população e incentivando boas práticas.</span
+            >
+          </div>
+        </li>
+        <li>
+          <div class="collapsible-header">
+            <i class="material-icons">near_me</i>Facilita o Acesso a Serviços
+            Gratuitos
+          </div>
+          <div class="collapsible-body">
+            <span
+              >O mapa interativo direciona as pessoas para locais próximos que
+              oferecem serviços essenciais, ajudando quem precisa de atendimento
+              rápido sem depender de longas buscas ou informações
+              desencontradas.</span
+            >
+          </div>
+        </li>
+        <li>
+          <div class="collapsible-header">
+            <i class="material-icons">family_restroom</i>Incentivo a Parcerias e
+            Ações Comunitárias
+          </div>
+          <div class="collapsible-body">
+            <span
+              >O espaço para ONGs, escolas e empresas ampliarem o alcance a
+              projetos sociais, fortalecendo o trabalho conjunto entre sociedade
+              civil e organizações.</span
+            >
+          </div>
+        </li>
+        <li>
+          <div class="collapsible-header">
+            <i class="material-icons">warning</i>Canal para Denúncias e
+            Melhorias Sociais
+          </div>
+          <div class="collapsible-body">
+            <span
+              >O canal de denúncias permite que problemas estruturais e sociais
+              sejam reportados rapidamente, facilitando a resolução de questões
+              como falta de saneamento ou negligência em políticas
+              públicas.</span
+            >
+          </div>
+        </li>
+        <li>
+          <div class="collapsible-header">
+            <i class="material-icons">download_for_offline</i>Acessibilidade
+            mesmo offline
+          </div>
+          <div class="collapsible-body">
+            <span
+              >Informações podem ser salvas para consulta sem internet,
+              beneficiando pessoas em áreas remotas ou com pouca
+              conectividade.</span
+            >
+          </div>
+        </li>
+      </ul>
+    </div>
 
+    <div class="btn-container">
+      <div class="text-center mt-3">
+        <a href="index.html" class="botao-personalizado">Voltar ao Início</a>
+      </div>
+    </div>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
-  <script>
-    // Initialize the collapsible component from Materialize when the DOM is fully loaded
-    document.addEventListener('DOMContentLoaded', function () {
-      var elems = document.querySelectorAll('.collapsible');
-      M.Collapsible.init(elems, { accordion: true });
-    });
-  </script>
+    <script>
+      // Initialize the collapsible component from Materialize when the DOM is fully loaded
+      document.addEventListener("DOMContentLoaded", function () {
+        var elems = document.querySelectorAll(".collapsible");
+        M.Collapsible.init(elems, { accordion: true });
+      });
+    </script>
 
-  <!-- Acessibilidade JS -->
-  <script src="js/script.js"></script>
+    <!-- Acessibilidade JS -->
+    <script src="js/script.js"></script>
 
-  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-  <script>
-    new window.VLibras.Widget('https://vlibras.gov.br/app');
-
-  </script>
-</body>
-
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget("https://vlibras.gov.br/app");
+    </script>
+  </body>
 </html>

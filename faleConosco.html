@@ -1,159 +1,239 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Fale Conosco</title>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/stylefaleconosco.css" />
+    <link rel="stylesheet" href="css/acessibilidade.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Fale Conosco</title>
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/acessibilidade.css">
-
-</head>
-
-<body class="bg-white text-dark">
-  <div class="container mt-5">
-    <!-- Barra de Acessibilidade -->
-    <div id="acessibilidade-bar">
-      <button id="toggle-bar" title="Mostrar/Ocultar barra">☰</button>
-      <div id="acessibilidade-opcoes">
-        <button onclick="aumentarFonte()" title="Aumentar Fonte">A+</button>
-        <button onclick="diminuirFonte()" title="Diminuir Fonte">A-</button>
-        <button onclick="alternarContraste()" title="Alto Contraste">🌓</button>
-        <button onclick="alternarLeitura()" title="Modo Leitura">📖</button>
+  <body class="bg-white text-dark">
+    <div class="container mt-5">
+      <!-- Barra de Acessibilidade -->
+      <div id="acessibilidade-bar">
+        <button id="toggle-bar" title="Mostrar/Ocultar barra">☰</button>
+        <div id="acessibilidade-opcoes">
+          <button onclick="aumentarFonte()" title="Aumentar Fonte">A+</button>
+          <button onclick="diminuirFonte()" title="Diminuir Fonte">A-</button>
+          <button onclick="alternarContraste()" title="Alto Contraste">
+            🌓
+          </button>
+          <button onclick="alternarLeitura()" title="Modo Leitura">📖</button>
+        </div>
       </div>
+
+      <!-- VLibras -->
+      <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+
+      <!-- Título -->
+      <h2 class="titulo-fale-conosco">Fale Conosco</h2>
+      <p class="text-center mb-5 texto-secundario">
+        Tem dúvidas ou sugestões? Envie uma mensagem ou entre em contato direto
+        com um de nossos colaboradores.
+      </p>
+
+      <!-- Seção de colaboradores -->
+      <h3 class="text-center mt-5">Nossa Equipe</h3>
+      <div class="container-pessoas mt-4">
+        <div class="card-pessoa">
+          <h4>Victor Almeida</h4>
+          <div class="detalhes">
+            <p>Email: victor@email.com</p>
+            <p>GitHub: victoralmeida1408</p>
+          </div>
+        </div>
+        <div class="card-pessoa">
+          <h4>Nicolas Santos Silva</h4>
+          <div class="detalhes">
+            <p>Email: nicolas@email.com</p>
+            <p>GitHub: Nicolas-sys1333</p>
+          </div>
+        </div>
+        <div class="card-pessoa">
+          <h4>João Pedro Garcia Almeida</h4>
+          <div class="detalhes">
+            <p>Email: joao@email.com</p>
+            <p>GitHub: Joao-AlmeidaDev</p>
+          </div>
+        </div>
+        <div class="card-pessoa">
+          <h4>Adrielle Stollemberger</h4>
+          <div class="detalhes">
+            <p>Email: adrielle@email.com</p>
+            <p>GitHub: Adri22K</p>
+          </div>
+        </div>
+        <div class="card-pessoa">
+          <h4>Samir Abdul Khalek</h4>
+          <div class="detalhes">
+            <p>Email: samir@email.com</p>
+            <p>GitHub: SamirAbdulKhalek</p>
+          </div>
+        </div>
+        <div class="card-pessoa">
+          <h4>Eudenis de Souza Vieira</h4>
+          <div class="detalhes">
+            <p>Email: eudenis@email.com</p>
+            <p>GitHub: eudenisvieira2000</p>
+          </div>
+        </div>
+        <div class="card-pessoa">
+          <h4>Diogo Gomes Barbosa</h4>
+          <div class="detalhes">
+            <p>Email: diogo@email.com</p>
+            <p>GitHub: diogobarbosa2000</p>
+          </div>
+        </div>
+        <div class="card-pessoa">
+          <h4>João Guilherme Cravo dos Santos</h4>
+          <div class="detalhes">
+            <p>Email: joaocravo@email.com</p>
+            <p>GitHub: joaocravo2000</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Formulário de contato -->
+
+      <h2 class="titulo-fale-conosco">Sugestões ou Dúvidas? Escreva abaixo!</h2>
+
+      <form id="meuFormulario">
+        <div class="mb-3">
+          <label for="nome" class="form-label">Seu nome</label>
+          <input
+            type="text"
+            class="form-control"
+            id="nome"
+            placeholder="Digite seu nome"
+            required
+          />
+        </div>
+
+        <div class="mb-3">
+          <label for="email" class="form-label">Seu e-mail</label>
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            placeholder="Digite seu e-mail"
+            required
+          />
+        </div>
+
+        <div class="mb-3">
+          <label for="assunto" class="form-label">Assunto</label>
+          <select class="form-select" id="assunto" required>
+            <option value="" disabled selected>Selecione um assunto:</option>
+            <option value="duvida-funcionalidade">
+              Dúvida sobre funcionalidades
+            </option>
+            <option value="sugestao-funcionalidade">
+              Sugestão de nova funcionalidade
+            </option>
+            <option value="bug">Problemas técnicos ou bugs</option>
+            <option value="navegacao">Dificuldade de navegação</option>
+            <option value="interface">Melhorias na interface</option>
+            <option value="desempenho">Desempenho do aplicativo</option>
+            <option value="feedback">Feedback geral</option>
+            <option value="suporte">Solicitação de suporte</option>
+            <option value="erro-texto">Erros de tradução ou texto</option>
+            <option value="cadastro-login">
+              Dúvidas sobre cadastro ou login
+            </option>
+            <option value="privacidade">
+              Questões sobre privacidade e segurança
+            </option>
+            <option value="conteudo">Recomendações de conteúdo</option>
+            <option value="notificacoes">Problemas com notificações</option>
+            <option value="pagamento">
+              Ajuda com pagamentos ou assinaturas
+            </option>
+            <option value="outro">Outro</option>
+          </select>
+        </div>
+
+        <div class="mb-3">
+          <label for="mensagem" class="form-label">Mensagem</label>
+          <textarea
+            class="form-control"
+            id="mensagem"
+            rows="5"
+            placeholder="Digite sua mensagem"
+            required
+          ></textarea>
+        </div>
+
+        <label for="anexo">Anexar imagem ou captura de tela (opcional):</label>
+        <input type="file" id="anexo" name="anexo" accept="image/*" />
+
+        <div class="text-center">
+          <button type="submit" class="btn btn-primary px-5">Enviar</button>
+        </div>
+        <div class="text-center mt-3">
+          <a href="index.html" class="botao-personalizado">Voltar ao Início</a>
+        </div>
+      </form>
     </div>
 
-    <!-- VLibras -->
-    <div vw class="enabled">
-      <div vw-access-button class="active"></div>
-      <div vw-plugin-wrapper>
-        <div class="vw-plugin-top-wrapper"></div>
-      </div>
+    <style>
+      #mensagemSucesso {
+        display: none;
+        color: green;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 20px;
+      }
+
+      .form-container {
+        max-width: 400px;
+        margin: 0 auto; /* centraliza na tela */
+        padding: 20px;
+      }
+
+      button {
+        display: block;
+        margin: 0 auto; /* centraliza o botão */
+      }
+    </style>
+
+
+      <p id="mensagemSucesso">Mensagem enviada com sucesso!</p>
     </div>
 
-    <!-- Título -->
-    <h2 class="text-center text-primary mb-4">Fale Conosco</h2>
+    <script>
+      document
+        .getElementById("meuFormulario")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
 
-    <!-- Texto inicial -->
-    <p class="text-center mb-5">
-      Tem dúvidas ou sugestões? Envie uma mensagem ou entre em contato direto com um de nossos colaboradores.
-    </p>
+          document.getElementById("mensagemSucesso").style.display = "block";
 
-    <!-- Seção de colaboradores -->
-    <div class="row mb-5">
-      <div class="col-md-6">
-        <div class="card shadow-sm mb-3">
-          <div class="card-body">
-            <h5 class="card-title">Victor Almeida </h5>
-            <p class="card-text">Email: victor@email.com</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="row mb-5">
-        <div class="col-md-6">
-          <div class="card shadow-sm mb-3">
-            <div class="card-body">
-              <h5 class="card-title">Nicolas Santos Silva</h5>
-              <p class="card-text">Email: Nicolas@email.com</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="row mb-5">
-          <div class="col-md-6">
-            <div class="card shadow-sm mb-3">
-              <div class="card-body">
-                <h5 class="card-title">João Pedro Garcia Almeida</h5>
-                <p class="card-text">Email: João@email.com</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6">
-            <div class="card shadow-sm mb-3">
-              <div class="card-body">
-                <h5 class="card-title">Adrielle Stollemberger</h5>
-                <p class="card-text">Email: Adrielle@email.com</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="card shadow-sm mb-3">
-              <div class="card-body">
-                <h5 class="card-title">Samir Abdul Khalek</h5>
-                <p class="card-text">Email: Samir@email.com</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="card shadow-sm mb-3">
-              <div class="card-body">
-                <h5 class="card-title">Eudenis de Souza Vieira</h5>
-                <p class="card-text">Email: Eudenis@email.com</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="card shadow-sm mb-3">
-              <div class="card-body">
-                <h5 class="card-title">Diogo Gomes Barbosa</h5>
-                <p class="card-text">Email: Diogo@email.com</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="card shadow-sm mb-3">
-              <div class="card-body">
-                <h5 class="card-title">João Guilherme Cravo dos Santos</h5>
-                <p class="card-text">Email: Adrielle@email.com</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Formulário de contato -->
-          <form>
-            <div class="mb-3">
-              <label for="nome" class="form-label">Seu nome</label>
-              <input type="text" class="form-control" id="nome" placeholder="Digite seu nome" required>
-            </div>
-
-            <div class="mb-3">
-              <label for="email" class="form-label">Seu e-mail</label>
-              <input type="email" class="form-control" id="email" placeholder="Digite seu e-mail" required>
-            </div>
-
-            <div class="mb-3">
-              <label for="assunto" class="form-label">Assunto</label>
-              <input type="text" class="form-control" id="assunto" placeholder="Ex: Dúvida sobre agendamento" required>
-            </div>
-
-            <div class="mb-3">
-              <label for="mensagem" class="form-label">Mensagem</label>
-              <textarea class="form-control" id="mensagem" rows="5" placeholder="Digite sua mensagem"
-                required></textarea>
-            </div>
-
-            <div class="text-center">
-              <button type="submit" class="btn btn-primary px-5">Enviar</button>
-            </div>
-          </form>
-        </div>
-
-        <!-- Bootstrap JS -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
- <!-- Acessibilidade JS -->
-         <script src="js/script.js"></script>
-
-        <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-        <script>
-            new window.VLibras.Widget('https://vlibras.gov.br/app');
-            
-        </script>
-
-      </body>
+          this.reset(); 
+        });
 
 
+    </script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Acessibilidade JS -->
+    <script src="js/script.js"></script>
+
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget("https://vlibras.gov.br/app");
+    </script>
+  </body>
 </html>
