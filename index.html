@@ -5,33 +5,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ITINERÁRIO EXTENSIONISTA IV</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    
+    <link rel="stylesheet" href="css/acessibilidade.css">
+
+
 </head>
 
 <body>
-    <header>
-        <div class="center">
-            <div class="logo"><img src="assests/LOGOS/horizontal1.png" alt="logo"></div>
-            <div class="menu">
-                <a href="#">Sobre</a>
-                <a href="#">Parceiros</a>
-                <a href="#">Download</a>
-                <a href="#">Fale Conosco</a>
-            </div>
+    <!-- Barra de Acessibilidade -->
+    <div id="acessibilidade-bar">
+        <button id="toggle-bar" title="Mostrar/Ocultar barra">☰</button>
+        <div id="acessibilidade-opcoes">
+            <button onclick="aumentarFonte()" title="Aumentar Fonte">A+</button>
+            <button onclick="diminuirFonte()" title="Diminuir Fonte">A-</button>
+            <button onclick="alternarContraste()" title="Alto Contraste">🌓</button>
+            <button onclick="alternarLeitura()" title="Modo Leitura">📖</button>
         </div>
-    </header>
-    <section class="sobre">
-        <div class="extra">
-            <img src="assests/homemcelular.png" alt="Homem mexendo no celular">
-        </div>
-    </section>
-    <div class="texto-sobre">
-        <h1><span> BEM AQUI: </span> <br /> Sua Saúde e Bem-Estar <br /> ao Alcance de um Toque!
-        </h1>
-        <p>BEM AQUI é o app que transforma sua rotina, trazendo tudo o que você precisa para cuidar da sua saúde e bem-estar, de forma simples e prática. Com recursos que te ajudam para uma vida mais saudável. Tudo que importa, Bem Aqui!</p>
-        <button class="botao">Baixe o App</button>
     </div>
+
+    <!-- VLibras -->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+
+    <main id="conteudo">
+
+        <header>
+            <div class="center">
+                <div class="logo"><img src="assests/LOGOS/7.png" alt="logo"></div>
+                <div class="menu">
+                    <a href="sobre.html">Sobre</a>
+                    <a href="parceiros.html">Parceiros</a>
+                    <a href="downloand.html">Download</a>
+                    <a href="faleConosco.html">Fale Conosco</a>
+                </div>
+            </div>
+        </header>
+
+        <section class="sobre">
+            <div class="extra">
+                <img src="assests/homemcelular.png" alt="Homem mexendo no celular">
+            </div>
+        </section>
+        <div class="texto-sobre">
+            <h1><span> BEM AQUI: </span> <br /> Sua Saúde e Bem-Estar <br /> ao Alcance de um Toque!
+            </h1>
+            <p>BEM AQUI é o app que transforma sua rotina, trazendo tudo o que você precisa para cuidar da sua saúde e
+                bem-estar, de forma simples e prática. Com recursos que te ajudam para uma vida mais saudável. Tudo que
+                importa, Bem Aqui!</p>
+            <a href="dowloand.html" class="botao">Baixe o App</a>
+
+        </div>
+
+   <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Itinerário Extensionista. Todos os direitos reservados.</p>
+    </footer>
+
+
+
+        <!-- Acessibilidade JS -->
+        <script src="js/script.js"></script>
+
+        <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+        <script>
+            new window.VLibras.Widget('https://vlibras.gov.br/app');
+
+        </script>
+
 </body>
 
 </html>

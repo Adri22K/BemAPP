@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Download do APP</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Contagem regressiva para o lançamento do aplicativo Bem Aqui."
+    />
+    <link href="https://fonts.cdnfonts.com/css/ds-digital" rel="stylesheet" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styledownload.css" />
+    <link rel="stylesheet" href="css/acessibilidade.css" />
+  </head>
+
+  <body>
+    <!-- Barra de Acessibilidade -->
+    <div id="acessibilidade-bar">
+      <button id="toggle-bar" title="Mostrar/Ocultar barra">☰</button>
+      <div id="acessibilidade-opcoes">
+        <button onclick="aumentarFonte()" title="Aumentar Fonte">A+</button>
+        <button onclick="diminuirFonte()" title="Diminuir Fonte">A-</button>
+        <button onclick="alternarContraste()" title="Alto Contraste">🌓</button>
+        <button onclick="alternarLeitura()" title="Modo Leitura">📖</button>
+      </div>
+    </div>
+
+    <!-- VLibras -->
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
+
+    <h1>Lançamento do App em:</h1>
+    <div id="countdown">--:--:--:--</div>
+
+    <div class="btn-container">
+      <a href="index.html" class="btn black white-text waves-effect">
+        <i class="material-icons left"></i>
+        Voltar para Início
+      </a>
+    </div>
+
+    <div class="store-badges">
+      <a
+        href="https://play.google.com/store/games?hl=pt_BR"
+        title="Em breve na Google Play"
+      >
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
+          alt="Disponível no Google Play"
+        />
+      </a>
+      <a
+        href="https://www.apple.com/br/app-store/"
+        title="Em breve na App Store"
+      >
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg"
+          alt="Disponível na App Store"
+        />
+      </a>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script>
+      const launchDate = new Date("2026-06-30T20:00:00").getTime();
+
+      const countdown = setInterval(function () {
+        const now = new Date().getTime();
+        const distance = launchDate - now;
+
+        if (distance <= 0) {
+          clearInterval(countdown);
+          document.getElementById("countdown").innerText = "00:00:00:00";
+          return;
+        }
+
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor(
+          (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        );
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        document.getElementById("countdown").innerText =
+          String(days).padStart(2, "0") +
+          ":" +
+          String(hours).padStart(2, "0") +
+          ":" +
+          String(minutes).padStart(2, "0") +
+          ":" +
+          String(seconds).padStart(2, "0");
+      }, 1000);
+    </script>
+    <!-- Acessibilidade JS -->
+
+    <script src="js/script.js"></script>
+
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget("https://vlibras.gov.br/app");
+    </script>
+  </body>
+</html>
