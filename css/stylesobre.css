@@ -28,7 +28,38 @@ h1 span {
 p {
   font-size: 18px;
   margin-bottom: 20px;
-  max-width: 800px;
+  max-width: 90%;
+}
+
+.centralizado {
+  max-width: 90%;
+  margin: 30px auto;
+  padding: 30px auto;
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.centralizado h1, .centralizado h2 {
+  text-align: center;
+}
+
+.texto-sobre {
+  max-width: 90%;
+  margin: 50px auto;
+  padding: 30px auto;
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.texto-sobre h1, .texto-sobre span {
+  text-align: center;
+}
+
+.texto-sobre p {
+  text-align: center;
 }
 
 /* Collapsible Materialize Customizado */
@@ -50,10 +81,27 @@ p {
   background-color: #01091d;
   color: #f0efee;
   font-size: 16px;
-  padding: 20px;
+  padding: 20px auto;
 }
 
-/* Ícones */
 .material-icons {
   color: var(--cor-hover);
+}
+
+.botao-personalizado {
+  background-color: #04194d;
+  color: #8dc6ff;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.botao-personalizado:hover {
+  background-color: #8dc6ff;
+  color: #04194d;
 }
